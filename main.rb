@@ -71,6 +71,7 @@ loop do
   puts "2) Crear"
   puts "3) Actualizar"
   puts "4) Eliminar"
+  puts "5) Salir"
   opt = gets.chomp.to_i
   case opt
   when 1
@@ -102,6 +103,8 @@ loop do
     else
       puts "El id no se encontro por lo tanto no se puedo eliminar un cliente."
     end
+  when 5
+    break
   end
 end
 
